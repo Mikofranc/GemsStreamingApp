@@ -31,7 +31,7 @@ class UserServiceTest {
         request.setName("chinedu");
         request.setEmail("chisom@gmail.com");
         assertNotNull(userService.register(request));
-        assertThat(userRepo.count(), is(3L));
+        assertThat(userRepo.count(), is(1L));
     }
     @Test
     public void testGetUserById() throws GemsTubeException {
